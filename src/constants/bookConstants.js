@@ -1,0 +1,3 @@
+export const REQUEST_BOOK_LIST = "REQUEST_BOOK_LIST";
+export const ADD_BOOK_RATING = "ADD_BOOK_RATING";
+export const ADD_REVIEW = "ADD_REVIEW";

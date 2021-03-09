@@ -1,0 +1,34 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    position: relative;
+  }
+
+  input {
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .star {
+    transition: all ease 200ms;
+    &.icon {
+      opacity: 0.5;
+      font-size: 1.3rem;
+
+      &.fill {
+        color: #f2711c;
+        opacity: 1;
+      }
+    }
+  }
+}
