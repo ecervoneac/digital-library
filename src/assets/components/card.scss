@@ -4,6 +4,7 @@
     width: 100%;
     position: relative;
     background-color: var(--theme-page-background);
+    transition: background-color ease 0.2s;
 
     &:hover {
       .remove-shelves-btn {
@@ -15,6 +16,7 @@
     .content {
       .header {
         color: var(--theme-page-text);
+        transition: color ease 0.2s;
       }
     }
 

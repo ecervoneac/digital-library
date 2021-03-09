@@ -10,8 +10,15 @@ body {
   padding: 50px 0;
 }
 
-.ui.form .field > label {
-  color: var(--theme-page-text);
+.ui {
+  &.form {
+    .field {
+      > label {
+        color: var(--theme-page-text);
+        transition: color ease 0.2s;
+      }
+    }
+  }
 }
 
 ul,
