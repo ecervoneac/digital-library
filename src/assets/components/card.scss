@@ -3,11 +3,18 @@
     height: 100%;
     width: 100%;
     position: relative;
+    background-color: var(--theme-page-background);
 
     &:hover {
       .remove-shelves-btn {
         opacity: 1;
         visibility: visible;
+      }
+    }
+
+    .content {
+      .header {
+        color: var(--theme-page-text);
       }
     }
 
