@@ -11,21 +11,21 @@ const reducer = combineReducers({
 
 const midleware = [thunk];
 
-// const localStorageBooks = localStorage.getItem("books")
-//   ? JSON.parse(localStorage.getItem("books"))
-//   : [];
+const localStorageBooks = localStorage.getItem("books")
+  ? JSON.parse(localStorage.getItem("books"))
+  : [];
 
-// const localStorageShelves =
-//   localStorage.getItem("shelves") &&
-//   JSON.parse(localStorage.getItem("shelves"));
+const localStorageShelves = localStorage.getItem("shelves")
+  ? JSON.parse(localStorage.getItem("shelves"))
+  : [];
 
 const initialState = {
-  // booksList: {
-  //   books: localStorageBooks,
-  // },
-  // shelvesList: {
-  //   shelves: localStorageShelves,
-  // },
+  booksList: {
+    books: localStorageBooks,
+  },
+  shelvesList: {
+    shelves: localStorageShelves,
+  },
 };
 
 const store = createStore(

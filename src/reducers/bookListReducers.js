@@ -1,8 +1,17 @@
-import { ADD_BOOK_RATING, ADD_REVIEW } from "../constants/bookConstants";
+import {
+  ADD_BOOK_RATING,
+  ADD_REVIEW,
+  REQUEST_BOOK_LIST,
+} from "../constants/bookConstants";
 import data from "../data";
 
 export const booksListReducer = (state = { books: data }, action) => {
   switch (action.type) {
+    case REQUEST_BOOK_LIST:
+      return {
+        ...state,
+        books: data,
+      };
     case ADD_BOOK_RATING:
       const findItem = state.books.find((x) => x.slug === action.slug);
       const rating = action.rating;

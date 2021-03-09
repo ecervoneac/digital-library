@@ -1,4 +1,14 @@
-import { ADD_BOOK_RATING, ADD_REVIEW } from "../constants/bookConstants";
+import {
+  ADD_BOOK_RATING,
+  ADD_REVIEW,
+  REQUEST_BOOK_LIST,
+} from "../constants/bookConstants";
+
+export const requestData = () => {
+  return {
+    type: REQUEST_BOOK_LIST,
+  };
+};
 
 export const rateBook = (slug, rating) => (dispatch, getState) => {
   dispatch({
